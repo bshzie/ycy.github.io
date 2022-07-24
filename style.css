@@ -1,0 +1,230 @@
+div,ul,li,a{
+    margin: 0;
+    padding: 0;
+}
+
+ #link{
+    margin-top: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    text-decoration: none;
+    line-height: 35px;
+    background-color: #5bb7b9;
+    border-radius: 10px;
+    /* color: rgb(208, 255, 0); */
+    color: #ffffff;
+    /* text-shadow: 1px 1px 5px rgb(224, 17, 239); */
+    font-size: 12px;
+    box-shadow: 5px 5px 10px #4a9496,
+    -5px -5px 10px #6cdadc;
+    transition: all .3s;
+}
+#link:hover{
+    box-shadow: 9px 9px 18px #4a9496,
+    -9px -9px 18px #6cdadc;
+}
+ li {
+    /* float: left; */
+    list-style: none;
+    
+}
+
+ ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 206px;
+    height: 250px;
+
+    text-align: center;
+    font-size: 15px;
+    color: rgb(238, 26, 26);
+  
+    /* border: 1px solid white; */
+    color: #ffffff;
+    /* color: rgb(17, 184, 239);
+    text-shadow: 1px 1px 5px rgb(224, 17, 239); */
+    font-size: 13px;
+}
+
+ol li{
+    
+    margin: 10px;
+    font-size: 15px;
+
+    color: white;
+}
+
+div[class^=app]{
+    margin: 0px auto;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    
+}
+.app1{
+    
+    background-image: url(imgs/点名.png);
+    background-color: #5bb7b9;
+    border-radius: 20px;
+
+}
+.app2{
+    
+    background-image: url(imgs/时间.png);
+    background-color: #5bb7b9;
+    border-radius: 20px;
+
+}
+.app3{
+    
+    background-image: url(imgs/话筒.png);
+    background-color: #5bb7b9;
+    border-radius: 20px;
+
+}
+.app4{
+    
+    background-image: url(imgs/未知状态.png);
+    background-color: #5bb7b9;
+    border-radius: 20px;
+
+}
+.app5{
+    
+    background-image: url(imgs/未知状态.png);
+    background-color: #5bb7b9;
+    border-radius: 20px;
+
+}
+.app6{
+    
+    background-image: url(imgs/未知状态.png);
+    background-color: #5bb7b9;
+    border-radius: 20px;
+
+}
+
+body {
+    background: #5bb7b9;
+}
+
+.common-things {
+    width: 700px;
+    margin: 15px auto;
+    border-radius: 41px;
+    background: #5bb7b9;
+    box-shadow: 5px 5px 10px #4a9496,
+        -5px -5px 10px #6cdadc;
+    transition: all .3s;
+}
+
+.common-things:hover {
+    transform: scale(1.01);
+    box-shadow: 9px 9px 18px #4a9496,
+        -9px -9px 18px #6cdadc;
+}
+
+.box1 {
+
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+    color: #ffffff;
+    /* color: rgb(17, 184, 239);
+    text-shadow: 1px 1px 5px rgb(224, 17, 239); */
+
+}
+
+.box2 {
+    width: 700px;
+    height: 260px;
+    margin: 30px auto;
+    /* background-color: rgb(72, 69, 71); */
+
+}
+
+.box2 .headimg-1 {
+    float: left;
+    margin-top: 0px;
+    width: 260px;
+    height: 260px;
+    background-image: url(imgs/headimg.png);
+    background-size: 100%;
+    /* background-color: red; */
+
+}
+
+.box2 .headimg-2 {
+    float: right;
+    margin-top: 0px;
+    width: 410px;
+    height: 260px;
+    margin-left: 0px;
+    background-color: #5bb7b9;
+}
+
+.box3 {
+   /* background-color: #fff; */
+    height: 640px;
+}
+
+.box2 .self-title {
+    margin: 3px auto;
+    margin-top: 3px;
+    /* width: 380px; */
+    height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    /* color: rgb(17, 184, 239);
+    text-shadow: 1px 1px 5px rgb(224, 17, 239); */
+    text-align: center;
+    line-height: 40px;
+    /* border-radius: 14px;
+    background-color: rgb(232, 160, 232);
+    box-shadow: 1px 1px 6px grey; */
+
+
+}
+
+.box2 .self-content {
+    margin: 0px auto;
+    width: 380px;
+    height: 185px;
+    text-align: center;
+    /* line-height: 185px; */
+   
+    /* border-radius: 30px; */
+   
+    border-top: 1px solid rgb(13, 224, 224);
+
+   
+}
+
+.selfwork-title {
+    float: left;
+    width: 700px;
+    margin-top: 3px;
+
+    height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    /* color: rgb(17, 184, 239);
+    text-shadow: 1px 1px 5px rgb(224, 17, 239); */
+    text-align: center;
+    line-height: 40px;
+
+    /* background-color: pink; */
+}
+
+.selfwork-content {
+    float: left;
+    width: 700px;
+    height: 560px;
+
+    /* border: 1px solid rgb(13, 224, 224); */
+
+}
