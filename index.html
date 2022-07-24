@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>##果园官网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(255,109,49,1);
+        }
+
+        .helloBox {
+            /* 这个长度要根据图片长度调节 不友好 */
+            /* height: 900px; */
+            background-image: url(imgs/首页开头.jpeg);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+
+        .helloBox .helloBox-logo {
+            height: 60px;
+            margin: 0px auto;
+            background-color: rgba(255,109,49,.5);
+            
+            /* box-shadow: 2px 2px 9px black; */
+        }
+
+        .helloBox .helloBox-logo .logo {
+            float: left;
+            width: 60px;
+            height: 60px;
+            /* background-color: rgba(233, 11, 174,.7); */
+            background-image: url(icos/脐橙.png);
+            background-size: contain;
+        }
+
+        .helloBox .helloBox-logo .logo-text {
+            margin-left: 20px;
+            float: left;
+            height: 60px;
+            /* background-color: rgb(17, 213, 180); */
+            font-size: 25px;
+            text-align: center;
+            line-height: 60px;
+            color: #fafafa;
+        }
+
+        .helloBox .helloBox-backBox {
+            /* float: left; */
+            /* 不浮动的盒子水平居中 margin: 50px auto;*/
+
+            /* position: relative; */
+            /* left: 50%; */
+            margin: 0px auto;
+            width: 880px;
+            height: 700px;
+            /* background-color: rgb(11, 239, 46); */
+            /* 这种对齐方式不友好 */
+        }
+
+        .helloBox .helloBox-backBox .helloBox-title {
+            margin-top: 50px;
+            float: left;
+            width: 150px;
+            height: 400px;
+            background-color: rgba(255,109,49,.5);
+            border-radius: 15px;
+            animation: helloBox-title 1s ease;
+
+            text-align: center;
+            padding-top: 40px;
+            font-size: 33px;
+            color: #fafafa;
+
+        }
+
+        @keyframes helloBox-title{
+            from{
+                margin-top: 150px;
+                background-color: rgba(255,109,49,0);
+            }
+            to{
+                margin-top: 50px;
+                background-color: rgba(255,109,49,.5);
+            }
+        }
+
+        .helloBox .helloBox-backBox .helloBox-content {
+            margin-top: 50px;
+            float: right;
+            width: 700px;
+            height: 400px;
+            background-color: rgba(255,109,49,.5);
+            border-radius: 15px;
+            animation: helloBox-title 1.7s ease;
+
+            text-align: center;
+            padding-top: 40px;
+            color: #fafafa;
+        }
+
+       
+
+        .productBox {
+            margin: 0px auto;
+            width: 1100px;
+            height: 655px;
+            /* background-color: rgb(248, 244, 16); */
+        }
+
+         .productBox-title {
+            /* float: left; */
+            /* 对齐方法不友好 子盒子浮动 让子盒子长度与父盒子（标准流)长度相等 */
+            height: 60px;
+          
+            /* margin-top: 100px;这会把父盒子一起退100px */
+            /* background-color: rgba(115,182,107,1); */
+            border-bottom: 1px solid black;
+            text-align: center;
+            line-height: 60px;
+            font-size: 25px;
+            color: #fafafa;
+        }
+
+        .productBox .productBox-backBox {
+            margin: 0px auto;
+            width: 965px;
+            height: 595px;
+            /* background-color: rgb(35, 35, 217); */
+        }
+       
+        .productBox ul li {
+            float: left;
+            list-style: none;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+        .productBox ul li a{
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(19, 225, 47);
+            box-shadow:  7px 7px 14px #753217,
+             -7px -7px 14px #ffa84b;
+             transition: all .5s;
+        }
+        .productBox ul li a:hover{
+            box-shadow:  11px 11px 22px #753217,
+             -11px -11px 22px #ffa84b;
+            
+        }
+        .productBox .pic1{
+            position: relative;
+            top: 0px;
+            right: 0px;
+            width: 210px;
+            height: 260px;
+            border-radius: 15px;
+            background-image: url(imgs/微信图片1.jpg);
+            background-size: cover;
+            /* background-color: rgb(8, 163, 246); */
+        }.productBox .pic2{
+            position: relative;
+            top: 0px;
+            right: 0px;
+            width: 210px;
+            height: 260px;
+            border-radius: 15px;
+            background-image: url(imgs/微信图片2.jpg);
+            background-size: cover;
+            /* background-color: rgb(8, 163, 246); */
+        }
+        .productBox .pic3{
+            position: relative;
+            top: 0px;
+            right: 0px;
+            width: 210px;
+            height: 260px;
+            border-radius: 15px;
+            background-image: url(imgs/微信图片3.jpg);
+            background-size: cover;
+            /* background-color: rgb(8, 163, 246); */
+        }
+        .productBox .pic4{
+            position: relative;
+            top: 0px;
+            right: 0px;
+            width: 210px;
+            height: 260px;
+            border-radius: 15px;
+            background-image: url(imgs/微信图片4.jpg);
+            background-size: cover;
+            /* background-color: rgb(8, 163, 246); */
+        }
+        .productBox .pic5{
+            position: relative;
+            top: 0px;
+            right: 0px;
+            width: 210px;
+            height: 260px;
+            border-radius: 15px;
+            background-image: url(imgs/微信图片5.jpg);
+            background-size: cover;
+            /* background-color: rgb(8, 163, 246); */
+        }
+        .productBox .pic6{
+            position: relative;
+            top: 0px;
+            right: 0px;
+            width: 210px;
+            height: 260px;
+            border-radius: 15px;
+            background-image: url(imgs/微信图片6.jpg);
+            background-size: cover;
+            /* background-color: rgb(8, 163, 246); */
+        }
+        .productBox .pic7{
+            position: relative;
+            top: 0px;
+            right: 0px;
+            width: 210px;
+            height: 260px;
+            border-radius: 15px;
+            background-image: url(imgs/微信图片7.jpg);
+            background-size: cover;
+            /* background-color: rgb(8, 163, 246); */
+        }
+        .productBox .pic8{
+            position: relative;
+            top: 0px;
+            right: 0px;
+            width: 210px;
+            height: 260px;
+            border-radius: 15px;
+            background-image: url(imgs/微信图片8.jpg);
+            background-size: cover;
+            /* background-color: rgb(8, 163, 246); */
+        }
+        .productSell-title{
+            height: 60px;
+            border-bottom: 1px solid black;
+            text-align: center;
+            line-height: 60px;
+            font-size: 25px;
+            color: #fafafa;
+        }
+        .sellTable {
+           margin: 30px auto;
+           /* height: 1000px; */
+        }
+        .sellTable tr{
+            height: 50px;
+        }
+       .sellTable .table-title{
+        font-weight: bolder;
+        font-size: large;
+       }
+       .about{
+        height: 400px;
+        text-align: center;
+
+        background-color: grey;
+       }
+       .about .QR{
+        width: 200px;
+        height: 200px;
+        margin: 0px auto;
+        margin-top: 20px;
+        background-image: url(imgs/微信图片1.jpg);
+       }
+       .about h6{
+        font-weight: normal;
+       }
+    </style>
+
+</head>
+
+<body>
+    <div class="helloBox">
+        <div class="helloBox-logo">
+            <div class="logo"></div>
+            <div class="logo-text">欢 迎 来 到 江 西 省 赣 州 市 信 丰 县 西 牛 镇 # # 果 园 ！</div>
+        </div>
+        <div class="helloBox-backBox">
+
+            <div class="helloBox-title">#<p></p><br> #<p></p><br> 果<p></p><br> 园<p></p><br></div>
+            <div class="helloBox-content">
+                <h2># # 果 园 发 展 史</h2><br>
+                <h3>#####################################</h3>
+                <h3>#####################################</h3>
+                <h3>#####################################</h3>
+                <h3>#####################################</h3>
+                <h3>#####################################</h3>
+                <h3>#####################################</h3>
+                <h3>#####################################</h3>
+                <h3>#####################################</h3>
+                <h3>#####################################</h3>
+                <h3>#####################################</h3>
+                <h3>#####################################</h3>
+            </div>
+        </div>
+        
+    </div>
+    <div class="productBox-title">果 &nbsp园 &nbsp风 &nbsp光</div>
+    <div class="productBox">
+        <!-- 该部分以后可考虑换成VR展示 -->
+        <div class="productBox-backBox">
+
+           
+            <ul>
+                <li><a href="imgs/微信图片1.jpg" target="_blank" class="pic1"></a></li>
+                <li><a href="imgs/微信图片2.jpg" target="_blank" class="pic2"></a></li>
+                <li><a href="imgs/微信图片3.jpg" target="_blank" class="pic3"></a></li>
+                <li><a href="imgs/微信图片4.jpg" target="_blank" class="pic4"></a></li>
+                <li><a href="imgs/微信图片5.jpg" target="_blank" class="pic5"></a></li>
+                <li><a href="imgs/微信图片6.jpg" target="_blank" class="pic6"></a></li>
+                <li><a href="imgs/微信图片7.jpg" target="_blank" class="pic7"></a></li>
+                <li><a href="imgs/微信图片8.jpg" target="_blank" class="pic8"></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="productSell-title">脐&nbsp; 橙&nbsp; 购&nbsp; 买</div>
+    <table class="sellTable" width="800"  border="1" cellspacing="0" bordercolor="black" >
+       <tr> <th class="table-title" colspan="5">2021年江西赣南脐橙各地顺丰包邮价格表</th></tr>
+        <tr>
+            <th colspan="2">区域</th>
+            <!-- <th>区域</th> -->
+            <th>数量</th>
+            <th>一级果</th>
+            <th>二级果</th>
+        </tr>
+        <tr>
+            <th rowspan="2">一区</th>
+            <th rowspan="2">江西，广东</th>
+            <th>5公斤</th>
+            <th>72元</th>
+            <th>52元</th>
+        </tr>
+        <tr>
+            <!-- <th>一区</th> -->
+            <!-- <th>江西，广东</th> -->
+            <th>10公斤</th>
+            <th>108元</th>
+            <th>88元</th>
+        </tr>
+        <tr>
+            <th rowspan="2">二区</th>
+            <th rowspan="2">湖北，湖南，安徽，上海，江苏，福建，浙江</th>
+            <th>5公斤</th>
+            <th>76元</th>
+            <th>53元</th>
+        </tr>
+        <tr>
+            <!-- <th>二区</th> -->
+            <!-- <th>湖北，湖南，安徽，上海，江苏，福建，浙江</th> -->
+            <th>10公斤</th>
+            <th>113元</th>
+            <th>91元</th>
+        </tr>
+        <tr>
+            <th rowspan="2">三区</th>
+            <th rowspan="2">北京</th>
+            <th>5公斤</th>
+            <th>78元</th>
+            <th>56元</th>
+        </tr>
+        <tr>
+            <!-- <th>三区</th> -->
+            <!-- <th>北京</th> -->
+            <th>10公斤</th>
+            <th>113元</th>
+            <th>93元</th>
+        </tr>
+        <tr>
+            <th rowspan="2">四区</th>
+            <th rowspan="2">河南，河北，山东，山西，天津，广西</th>
+            <th>5公斤</th>
+            <th>81元</th>
+            <th>59元</th>
+        </tr>
+        <tr>
+            <!-- <th>四区</th> -->
+            <!-- <th>河南，河北，山东，山西，天津，广西</th> -->
+            <th>10公斤</th>
+            <th>118元</th>
+            <th>96元</th>
+        </tr>
+        <tr>
+            <th rowspan="2">五区</th>
+            <th rowspan="2">贵州，陕西，四川，重庆，云南，辽宁，<br>海南，宁夏，甘肃，黑龙江，吉林</th>
+            <th>5公斤</th>
+            <th>90元</th>
+            <th>69元</th>
+        </tr>
+        <tr>
+            <!-- <th>五区</th> -->
+            <!-- <th>贵州，陕西，四川，重庆，云南，辽宁，<br>海南，宁夏，甘肃，黑龙江，吉林</th> -->
+            <th>10公斤</th>
+            <th>138元</th>
+            <th>116元</th>
+        </tr>
+        <tr>
+            <th rowspan="2">六区</th>
+            <th rowspan="2">新疆</th>
+            <th>5公斤</th>
+            <th>115元</th>
+            <th>95元</th>
+        </tr>
+        <tr>
+            <!-- <th>六区</th> -->
+            <!-- <th>新疆</th> -->
+            <th>10公斤</th>
+            <th>195元</th>
+            <th>175元</th>
+        </tr>
+        <tr>
+            <th rowspan="2">七区</th>
+            <th rowspan="2">青海</th>
+            <th>5公斤</th>
+            <th>121元</th>
+            <th>100元</th>
+        </tr>
+        <tr>
+            <!-- <th>七区</th> -->
+            <!-- <th>青海</th> -->
+            <th>10公斤</th>
+            <th>205元</th>
+            <th>185元</th>
+        </tr>
+        <tr>
+            <th rowspan="2">八区</th>
+            <th rowspan="2">西藏</th>
+            <th>5公斤</th>
+            <th>166元</th>
+            <th>146元</th>
+        </tr>
+        <tr>
+            <!-- <th>八区</th> -->
+            <!-- <th>河南，河北，山东，山西，天津，广西</th> -->
+            <th>10公斤</th>
+            <th>300元</th>
+            <th>280元</th>
+        </tr>
+    </table>
+    <div class="about">
+        <br>
+       <h2>联系方式</h2>
+       <p>电话：###########</p> 
+       <p>微信：###########</p> 
+       <div class="QR"></div>
+       <h6>微信扫一扫</h6>
+    </div>
+</body>
+
+</html>
