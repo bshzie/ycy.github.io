@@ -1,0 +1,23 @@
+{
+  "id": "3663751",
+  "name": "微信d'h",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10515202",
+      "name": "接听",
+      "font_class": "jieting1",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "10515201",
+      "name": "挂断",
+      "font_class": "guaduan",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    }
+  ]
+}
