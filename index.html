@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鸡哥邀您微信通话</title>
+    <link rel="stylesheet" href="cxkstyle.css">
+    <script>
+        window.onload = function () {
+            document.getElementsByTagName("audio")[0].playbackRate = 2;
+            var mp3 = new Audio('wx.mp3');  
+            mp3.play();  // 播放
+            
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <audio src="wx.mp3" autoplay="autoplay" loop="loop"></audio>
+    <div class="shell_img">
+        <div class="img"></div>
+        <div class="name">邀你打篮球</div>
+    </div>
+    <div class="shell_call">
+
+        <div class="no">
+            <a class="iconfont no_img" href="#">&#xe640;</a>
+            <div class="no_text">挂断</div>
+        </div>
+        <div class="yes">
+            <a class="iconfont yes_img" href="#">&#xe641;</a>
+            <div class="yes_text">接听</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
